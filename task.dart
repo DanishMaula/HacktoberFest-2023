@@ -5,19 +5,16 @@ String generatePelaplaktian(){
     subWord1 += element;
   });
   
-  var subWord2 = (){
-    ['P', 'e', 'l', 'a', 'p'].forEach((element) {
-    subWord1 += element;
-  });
-  };
-  var subWord3 = "tian";
+  String subWord2 = ['P', 'e', 'l', 'a', 'p'].join('');
+
+  String subWord3 = "tian";
 
   // Return "Pelaplaktian"
-  return "";
+  return subWord2+subWord1+subWord3;
 }
 
 void main(){
-  // Task Damnish 1
+  // Task 1
   String task1Result = generatePelaplaktian() == "Pelaplaktian" ? "Task 1 Berhasil" : "Task 1 Gagal";
 
   // Run to see the result
